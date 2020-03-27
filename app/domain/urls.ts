@@ -102,7 +102,6 @@ const localeAwareUrls: Urls = {
     apiDocs: '/api-docs',
     statistics: '/statistiky'
   },
-<<<<<<< HEAD
   br: {
     submitReport: '/',
     profile: '/condicaosaude',
@@ -112,7 +111,6 @@ const localeAwareUrls: Urls = {
     api: '/api',
     apiDocs: '/api-docs',
     statistics: '/estatisticas'
-=======
   it: {
     submitReport: '/',
     profile: '/profilo',
@@ -202,7 +200,6 @@ const localeAwareUrls: Urls = {
     api: '/api',
     apiDocs: '/api-docs',
     statistics: '/statistics'
->>>>>>> ae18c22f043b2ea4573be04e66292ebde8582466
   }
 };
 
