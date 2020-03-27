@@ -103,6 +103,9 @@ dist
 # TernJS port file
 .tern-port
 
+# Jetbrain Settings
+.idea/
+
 sessions
 
 covid_db
