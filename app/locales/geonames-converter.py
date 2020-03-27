@@ -2,9 +2,9 @@ from csv import DictReader
 from json import dump as write_as_json
 
 # Set the country code you want to create JSON files for
-COUNTRY_CODE = 'nl'
+COUNTRY_CODE = 'br'
 
-# Parse CSV for a given country from Geonames.org 
+# Parse CSV for a given country from Geonames.org
 rows = []
 with open('%s.txt' % COUNTRY_CODE.upper(), 'r') as f:
     fieldnames = [
@@ -28,7 +28,7 @@ with open('%s.txt' % COUNTRY_CODE.upper(), 'r') as f:
 # Create a [country-code]-municipalities.json that maps municipalities to zip codes
 municipalities = {}
 for row in rows:
-    municipality = row.get('admin name2').upper()
+    municipality = row.get('admin name1').upper()
     if not municipality in municipalities:
         municipalities[municipality] = {'postalCodes': []}
     municipalities[municipality]['postalCodes'].append(row.get('postal code'))
