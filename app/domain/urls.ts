@@ -8,6 +8,7 @@ export type Locale =
   | 'en-AU'
   | 'es-MX'
   | 'sk'
+  | 'br'
   | 'it'
   | 'tr'
   | 'dk'
@@ -111,6 +112,7 @@ const localeAwareUrls: Urls = {
     api: '/api',
     apiDocs: '/api-docs',
     statistics: '/estatisticas'
+  },
   it: {
     submitReport: '/',
     profile: '/profilo',
